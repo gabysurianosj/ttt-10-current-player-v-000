@@ -1,7 +1,7 @@
 def turn_count(board)
   turns = 0 
   board.each do |space|
-    if space == "X" || space == "O"
+    if space == "x" || space == "o"
       turns += 1 
     end
   end 
@@ -11,8 +11,8 @@ end
 def currentplayer_(board)
   turns = turn_count(board)
   if turns % 2 == 0 
-    return "X"
+    return "x"
   else 
-    return "O"
+    return "o"
   end
 end 
